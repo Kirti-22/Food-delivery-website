@@ -1,0 +1,217 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:40px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left:0px;
+}
+/*Navigation Bar: Logo and Image */
+  #logo{
+      margin:10px 34px;
+  }
+  #logo img{
+    margin:5px 10px;
+    height:60px;
+    filter:invert(100%);
+  }
+
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex; 
+    font-family: 'Baloo 2', cursive;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+  
+}
+#navbar ul li a{
+  color:white;
+  display: block;
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    height:700px;
+    align-items: center;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('bg\ 2pizza.jpg')no-repeat center/cover;
+    z-index: -1;
+    opacity: 0.70;
+    height:800px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: black;
+    text-align: center;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo 2', cursive;
+}
+/* Services center */
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding:34px;
+    margin:3px 6px;
+    border-radius: 28px;
+    background: rgb(196, 184, 184);
+}
+#services .box img{
+    height:200px ;
+    display: block;
+    margin: auto;
+}
+/* contact Section*/
+#contact{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url('contact-us-4193523_1920.jpg') no-repeat center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 34px ;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size:20px;
+}
+#contact-box form{
+ width:40%;
+}
+
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Akaya Kanadaka', cursive;
+ font-size: 40px;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+   
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+.btn{
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    color: white;
+    background-color: brown;
+    margin:17px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    width:100px;
+    margin:0 50%;
+    position:relative;
+    left:-50px;
+    }
+    .btn:hover{
+        background-color: rgb(236, 102, 102);
+        color: black;
+    }
+    .center{
+        text-align: center;
+    }
+/* client section */
+#client-section{
+height: 344px;
+position: relative;
+}
+#client-section::before{
+    content: "";
+background: url(bg\ 1.jpg) no-repeat center/cover;
+position: absolute;
+width: 100%;
+height:100% ;
+z-index: -1;
+opacity: 0.4;
+}
+#clients{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+#clients img{
+height: 124px;
+display: block;
+padding: 50px;
+}
